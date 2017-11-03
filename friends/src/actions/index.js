@@ -31,24 +31,3 @@ export const getFriends = () => {
     	payload: friends,
     };
 };
-
-// Mikias's code:
-// export const addFriendsSuccess = (friendsList) => {
-//   return {
-//     type: ADD_FRIENDS,
-//     payload: friendsList
-//   };
-// };
-
-// export const addFriends = (friendsList) => {
-//   const friendsEndpoint = 'http://localhost:5000/friends';
-//   return (dispatch) => {
-//     return axios.post(friendsEndpoint, friendsList)
-//       .then(response => {
-//         dispatch(addFriendsSuccess(response.data))
-//       }) 
-//       .catch(error => {
-//         throw(error);
-//       });
-//   };
-// };
